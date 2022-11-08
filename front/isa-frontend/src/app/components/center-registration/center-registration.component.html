@@ -1,0 +1,54 @@
+<div class="centerRegistration">
+  <form
+    class="centerRegistration"
+    [formGroup]="insertForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="form">
+      <h1>Center Registration</h1>
+      <div class="formInputItem">
+        <label for="name">Name:</label>
+        <input formControlName="name" type="text" placeholder="Enter name" />
+      </div>
+      <div class="formInputItem">
+        <label for="city">City:</label>
+        <input formControlName="city" type="text" placeholder="Enter city" />
+      </div>
+      <div class="formInputItem">
+        <label for="country">Country:</label>
+        <input
+          formControlName="country"
+          type="text"
+          placeholder="Enter country"
+        />
+      </div>
+      <div class="formInputItem">
+        <label for="description">Description:</label>
+        <input
+          formControlName="description"
+          placeholder="Enter description"
+          type="text"
+        />
+      </div>
+      <div class="formInputItem">
+        <label for="opening">Opening:</label>
+        <input
+          formControlName="opening"
+          placeholder="Enter opening time"
+          type="time"
+        />
+      </div>
+      <div class="formInputItem">
+        <label for="closing">Closing:</label>
+        <input
+          formControlName="closing"
+          placeholder="Enter closing time"
+          type="time"
+        />
+      </div>
+      <button class="registerButton" type="submit" value="Submit">
+        Register
+      </button>
+    </div>
+  </form>
+</div>

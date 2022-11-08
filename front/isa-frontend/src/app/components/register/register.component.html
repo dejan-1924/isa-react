@@ -1,0 +1,56 @@
+<div class="register">
+  <form class="registerForm" [formGroup]="insertForm" (ngSubmit)="onSubmit()">
+    <div class="form">
+      <h1>Sign Up</h1>
+      <div class="formInputItem">
+        <label>Name:</label>
+        <input formControlName="Name"
+        required/>
+      </div>
+      <div class="formInputItem">
+        <label>Surname:</label>
+        <input formControlName="Surname"/>
+      </div>
+      <div class="formInputItem">
+        <label>Email:</label>
+        <input formControlName="Email"/>
+      </div>
+      <div class="formInputItem">
+        <label>Address:</label>
+        <input formControlName="Address"/>
+      </div>
+      <div class="formInputItem">
+        <label>City:</label>
+        <input formControlName="City"/>
+      </div>
+      <div class="formInputItem">
+        <label>Country:</label>
+        <input formControlName="Country"/>
+      </div>
+      <div class="formInputItem">
+        <label>Phone number:</label>
+        <input formControlName="PhoneNumber"/>
+      </div>
+      <div class="formInputItem">
+        <label>SSN:</label>
+        <input formControlName="SSN"/>
+      </div>
+      <div class="formInputItem">
+        <label>Password:</label>
+        <input formControlName="Password" type="password"/>
+      </div>
+      <div class="formInputItem">
+        <label>Password:</label>
+        <input formControlName="Password2" type="password"/>
+      </div>
+      <div class="formInputItem">
+        <label>Gender:</label>
+        <label class="radioButtonLabel" for="male">Male</label>
+        <input type="radio" id="male" value="male" formControlName="Gender" checked>
+        <label class="radioButtonLabel" for="female">Female</label>
+        <input type="radio" id="female" value="female" formControlName="Gender">
+      </div>
+    </div>
+    <button class="registerButton">Sign up</button>
+  </form>
+</div>

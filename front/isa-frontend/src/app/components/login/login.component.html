@@ -1,0 +1,30 @@
+<div class="login">
+  <form class="loginForm" [formGroup]="insertForm" (ngSubmit)="onSubmit()">
+    <h1>Log in</h1>
+    <label for="Username">Username:</label>
+    <input
+      formControlName="Username"
+      type="text"
+      placeholder="Enter username"
+    />
+    <div *ngIf="Username.touched && Username.errors" class="error">
+      <span *ngIf="Password.hasError('
+      required')"
+        >Username is required</span
+      >
+    </div>
+    <label for="Password">Password:</label> 
+    <input
+      formControlName="Password"
+      placeholder="Enter password"
+      type="password"
+    />
+    <div *ngIf="Password.touched && Password.errors" class="error">
+      <span *ngIf="Password.hasError('
+    required')"
+        >Password is required</span
+      >
+    </div>
+    <button class="loginButton" type="submit" value="Submit">Login</button>
+  </form>
+</div>

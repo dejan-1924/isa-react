@@ -1,0 +1,55 @@
+<div class="centerAdminRegistration">
+    <form class="centerAdminRegistration" [formGroup]="insertForm" (ngSubmit)="onSubmit()">
+        <div class="form">
+            <h1>Center Admin Registration</h1>
+            <div class="formInputItem">
+                <label for="email">Email:</label>
+                <input formControlName="email" type="email" placeholder="Enter email" />
+            </div>
+            <div class="formInputItem">
+                <label for="password">Password:</label>
+                <input formControlName="password" placeholder="Enter password" type="password" />
+            </div>
+            <div class="formInputItem">
+                <label for="name">First name:</label>
+                <input formControlName="name" placeholder="Enter first name" type="text" />
+            </div>
+            <div class="formInputItem">
+                <label for="surname">Last name:</label>
+                <input formControlName="surname" placeholder="Enter last name" type="text" />
+            </div>
+            <div class="formInputItem">
+                <label for="address">Address:</label>
+                <input formControlName="address" placeholder="Enter your address" type="text" />
+            </div>
+            <div class="formInputItem">
+                <label for="city">City:</label>
+                <input formControlName="city" placeholder="Enter your city" type="text" />
+            </div>
+            <div class="formInputItem">
+                <label for="country">Country:</label>
+                <input formControlName="country" placeholder="Enter your country" type="text" />
+            </div>
+            <div class="formInputItem">
+                <label for="phoneNumber">Phone number:</label>
+                <input formControlName="phoneNumber" placeholder="+381xxxxxxxxx" type="text" />
+            </div>
+            <div class="formInputItem">
+                <label for="ssn">SSN:</label>
+                <input formControlName="ssn" placeholder="Social security number" type="text" />
+            </div>
+            <div class="formInputItem">
+                <label for="gender">Gender:</label>
+                <label class="radioButtonLabel" for="male">Male </label>
+                <input formControlName="gender" value="male" type="radio" id="male"><br />
+                <label class="radioButtonLabel" for="male">Female </label>
+                <input formControlName="gender" value="female" type="radio" id="female">
+            </div>
+            <div class="formInputItem">
+                <label for="centerId">Center:</label>
+                <input formControlName="centerId" placeholder="centerId" type="text" />
+            </div>
+            <button class="registerButton" type="submit" value="Submit">Register</button>
+        </div>
+    </form>
+</div>

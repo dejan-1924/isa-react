@@ -1,0 +1,2 @@
+insert into center(address, description, opening, closing) values ('Laze Kostica 12', 'Neka deskripcija', '07:00:00', '13:00:00');
+insert into center(address, description, opening, closing) values ('Filipa Filipovica 10b', 'Ovde zive Risticevi', '06:00:00', '12:00:00');

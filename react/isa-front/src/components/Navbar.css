@@ -1,0 +1,20 @@
+.navbar {
+  background-color: black;
+  text: white;
+  display: flex;
+}
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.NavLink {
+  color: white;
+  text-decoration: none;
+}

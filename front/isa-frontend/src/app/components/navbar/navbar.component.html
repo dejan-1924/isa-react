@@ -1,0 +1,25 @@
+<div>
+  <div class="navbar">
+    <div class="logo">App</div>
+    <div class="items">
+      <ul>
+        <li><a routerLink="home">Home</a></li>
+        <li><a routerLink="centers">Centers</a></li>
+        <li *ngIf="displaylogedIn"><a routerLink="profile">Profile</a></li>
+      </ul>
+    </div>
+    <div class="navbar_actions">
+      <button *ngIf="displaylogedIn" class="login" (click)="onClick()">
+        Logout
+      </button>
+      <a *ngIf="!displaylogedIn" routerLink="login"
+        ><button class="login">Log in</button></a
+      >
+      <a *ngIf="!displaylogedIn" routerLink="register"
+        ><button class="login">Register</button></a
+      >
+    </div>
+  </div>
+
+  <div></div>
+</div>

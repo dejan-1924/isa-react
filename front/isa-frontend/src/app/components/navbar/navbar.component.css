@@ -1,0 +1,67 @@
+.navbar {
+  background-color: rgb(20, 11, 97);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.logo {
+  background-color: white;
+  color: black;
+  margin-left: 1rem;
+}
+
+.items > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.items > ul > li > a {
+  cursor: pointer;
+  color: white;
+}
+.items > ul > li > a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(30, 229, 255);
+}
+
+.navbar_actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.login {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem;
+  color: white;
+}
+.login:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 140, 255);
+  padding: 0.5rem;
+  color: rgb(0, 140, 255);
+  cursor: pointer;
+}
+
+.register {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem;
+  color: white;
+  margin-right: 1rem;
+}
+.register:hover {
+  background-color: transparent;
+  border: 1px solid rgb(215, 12, 241);
+  padding: 0.5rem;
+  color: rgb(215, 12, 241);
+  cursor: pointer;
+}

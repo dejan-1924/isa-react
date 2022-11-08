@@ -1,0 +1,28 @@
+<div class="modal">
+  <div>
+    <form class="loginForm" [formGroup]="insertForm" (ngSubmit)="onSubmit()">
+      <h1>Log in</h1>
+      <label>Name:</label>
+
+      <input formControlName="name" type="text" />
+      <label for="Surname">Surname:</label>
+      <input formControlName="surname" type="text" />
+      <label for="Username">Address:</label>
+      <input formControlName="address" type="text" />
+      <label for="Username">City:</label>
+      <input formControlName="city" type="text" />
+      <label for="Username">Country:</label>
+      <input formControlName="country" type="text" />
+      <label for="Username">Phone Number:</label>
+      <input formControlName="phoneNumber" type="text" />
+
+      <label for="Username">Profession:</label>
+      <input formControlName="profession" type="text" />
+      <label for="Username">Institution:</label>
+      <input formControlName="institution" type="text" />
+
+      <button type="submit" value="Submit">Save</button>
+      <button (click)="onClose()">Close</button>
+    </form>
+  </div>
+</div>

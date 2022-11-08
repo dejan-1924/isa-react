@@ -1,0 +1,50 @@
+<app-modal
+  *ngIf="this.profileService.showDialog"
+  [inputFromParent]="user"
+></app-modal>
+<div>
+  <button (click)="onClick()">Edit</button>
+  <h1>User Info</h1>
+
+  <div class="infoItem">
+    <span>Email: </span>
+    <span>{{ user.email }}</span>
+  </div>
+  <div class="infoItem">
+    <span>Name: </span>
+    <span>{{ user.name }}</span>
+  </div>
+  <div class="infoItem">
+    <span>Surname: </span>
+    <span>{{ user.surname }}</span>
+  </div>
+  <div class="infoItem">
+    <span>Address: </span>
+    <span>{{ user.address }}</span>
+  </div>
+  <div class="infoItem">
+    <span>City: </span>
+    <span>{{ user.city }}</span>
+  </div>
+  <div class="infoItem">
+    <span>Country: </span>
+    <span>{{ user.country }}</span>
+  </div>
+  <div class="infoItem">
+    <span>Phone Number: </span>
+    <span>{{ user.phoneNumber }}</span>
+  </div>
+  <div class="infoItem">
+    <span>SSN: </span>
+    <span>{{ user.ssn }}</span>
+  </div>
+
+  <div class="infoItem">
+    <span>Profession: </span>
+    <span>{{ user.profession }}</span>
+  </div>
+  <div class="infoItem">
+    <span>Insitution: </span>
+    <span>{{ user.institution }}</span>
+  </div>
+</div>

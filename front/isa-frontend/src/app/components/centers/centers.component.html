@@ -1,0 +1,20 @@
+<input
+  type="text"
+  name="search"
+  [(ngModel)]="searchText"
+  placeholder="Search"
+/>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Description</th>
+    <th>Grade</th>
+  </tr>
+  <tr *ngFor="let center of centers | filter: searchText">
+    <td>{{ center.name }}</td>
+    <td>{{ center.address }}</td>
+    <td>{{ center.description }}</td>
+    <td>{{ center.grade }}</td>
+  </tr>
+</table>
